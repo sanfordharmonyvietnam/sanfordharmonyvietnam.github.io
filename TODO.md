@@ -26,4 +26,4 @@ Starter tasks:
 - [ ] Create different branch of this repo and push the code to there.
 - [ ] Create a pull request.
 
-For any suggestions and/or questions please contact _**Nghia Lam**_: [Mail](nghialam12795@gmail.com) | [Skype](https://join.skype.com/invite/i2lAyQN3M6QD)
+For any suggestions and/or questions please contact _**Nghia Lam**_: [Mail](mailto:nghialam12795@gmail.com) | [Skype](https://join.skype.com/invite/i2lAyQN3M6QD)
