@@ -1,0 +1,345 @@
+@import 'reset';
+@import 'config';
+
+body{
+    // background-image: linear-gradient(-90deg, #308B90, rgb(223, 241, 245));
+    background-image: linear-gradient(to right, rgba(202, 220, 228, 0), 
+    #308B90); 
+    //CHỈNH PHÔNG CHỮ
+    // font-family: 'Roboto Slab', serif; 
+}
+
+// LÀM PHẦN HEADER+LOGO+BANNER
+#header_page{
+    .container{
+
+        .row{
+            height: 760px;
+            
+            .col-left{
+                flex:50%;
+                .logo{
+                    img{
+                        
+                        display:block;
+                        float: left;
+                        width: 53%;
+                        margin-top: 0em;
+                        margin-left:0em;
+                    }
+                }
+                .content-header{
+                    .info-content-header{
+                        margin-top: 8em;
+                        h2{
+                            font-size: 30px;
+                            margin-left: 4em;
+                        }
+                        p{
+                            font-size: 17.5px;
+                            padding: 13px;
+
+                        }
+                        .content-3col{
+                            .row{
+
+                            }
+                            .col{
+                                p{
+
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            .col-right{
+                flex:50%;
+                .img-header{
+                    display:block;
+                    float:right;
+                }
+            }
+            
+            
+        }
+    }
+}
+
+// LÀM PHẦN 3 CÁI CHART
+#main{
+    .container{
+            height: 450px;
+            img{
+                display:block;
+                width: 27%;
+                float:left;
+                margin-right: 55px;
+                position: relative;
+                &:hover{ 
+                    transform: scale(1.2);
+                }
+                &:hover.dropdown > ul {
+                    display: block;
+                }
+                
+                
+            }
+    }
+}
+
+#main{
+    .chart-1>ul{
+        
+            position: absolute;
+            left: 18em;
+            top: 117em;
+        
+    }
+    .chart-2>ul{
+        
+            position: absolute;
+            left: 37em;
+            top: 117em;
+        
+    }
+    .chart-3>ul{
+        
+            position: absolute;
+            left: 57em;
+            top: 117em;
+        
+    }
+
+}
+
+// PHẦN GIỚI THIỆU
+
+#main2{
+    margin-top:3.2em;
+    .container{
+        img{
+
+        }
+        .content2{
+            p{
+                background-color: #ffffff;
+                position: absolute;
+                z-index: 9999999;
+                margin-top: 1em;
+                width: 52em;
+                font-size: 17px;
+                margin-left: 11em;
+            }
+        }
+        img{
+
+        }
+        p{
+            font-size: 17px;
+            margin-left: 22em;
+            margin-top: -15em;
+            width: 331px;
+            height: 7em;
+            background-color: #ffffff;
+        }
+
+    }
+}
+
+//PHẦN LÀM ĐƠN VỊ TỔ CHỨC VÀ VẬN HÀNH
+#main1{
+    height:500px;
+    margin-top: -18em;
+    .container{
+        .title{
+            display: inline;
+            margin-left: 23em;
+        }
+        .row{
+            .col{
+                .info1{
+                    h3{
+                        margin-left: 10em;
+                    }
+                    img{
+                        width: 40%;
+                        margin-left: 9em;
+                    }  
+                }
+            }
+            .col{
+                .info2{
+                    h3{
+                        margin-left: 13em;
+                    }
+                    img{
+                        width: 58%;
+                        margin-left: 6em;
+                    }
+                    p{
+                        margin-top: 3.5em;
+                    }
+                }
+            }
+
+        }
+        .col{
+            margin-top: 2em;
+            margin-right: 11px;
+            background-color:bisque;
+            
+        }
+    }
+}
+
+// <!--PHẦN QUOTE CỦA MỌI NGƯỜI-->
+#main3{
+    .container{
+        height:400px;
+        h3{
+            display: inline;
+            margin-left: 28em;
+            
+        }
+        .row{
+            margin-top:20px;
+            .col{
+                background-color: #f9fafa;
+                margin-right: 27px;
+                height: 278px;
+                .img{
+                    img{
+                        width: 24%;
+                        margin-left: 107px;
+                        margin-top: 19px;
+
+                        border: 1px #d4d4d4 solid;
+                        padding: 0px;
+                        border-radius:50%;
+                        -moz-border-radius:50%;
+                        -webkit-border-radius:50%;
+                    }
+
+                }
+                .name{
+                    margin-left: 91px;              
+                }
+                p{
+                    margin-top: 1em;
+                }
+                 
+                
+            }    
+        }
+        
+    }
+}
+
+.lecture{
+    height: 100px;
+    p{
+        margin-left: 70px;
+        margin-top: 22px;
+    }
+}
+
+// PHẦN ĐĂNG KÍ CỦA PHONG
+#main4{
+    width: fit-content;
+    .Input1{
+        margin-left: 41px;
+    }
+    .Input2{
+        margin-left: 18px;
+    }
+    .Input4{
+        margin-left: 5px;
+    }
+    #Part2{
+        margin-left: 500px;
+    }
+    #Part2 .TheFifthThing{
+        margin-left: -170px;
+        word-wrap: break-word;
+    }
+    .Verify-Signing-Button{
+        background-color: rgba(0, 113, 128, 0.63);
+        color: white;
+        font-weight: bold;
+        margin-left: 893px;
+    }
+}
+
+// ẢNH CÁC HOẠT ĐỘNG
+#main5{
+    margin-top: -6em;
+    height: 65em;
+    .container{
+        .row{
+            .col{
+                img{
+                    width: 98%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+
+// PHẦN QUÁ TRÌNH HOẠT ĐỘNG CỦA SANFORD HARMONY 
+#main6{
+    height: 300px;
+    .container{
+        p{
+            display: inline;
+            margin-left: 16em;
+        }
+        margin-top:10%;
+        .row{
+            margin-top: 30px;
+            .col{
+                
+                
+                img{    
+                    width: 95%;
+                    margin-left: -18px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
