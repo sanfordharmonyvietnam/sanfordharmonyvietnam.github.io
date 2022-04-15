@@ -1,0 +1,319 @@
+
+@import 'config';
+
+#main1{
+    height:auto;
+    .container{
+        .h3{
+            h3{
+                margin-left: 4%;
+                background-color: #99D4D7;
+                display: inline;
+                font-size: 23px;
+
+            }
+        }
+        .row{
+            .content{
+                
+                margin-top: 2em;
+                margin-bottom: 2em;
+                margin-left: 7em;
+                
+                p{
+                    color: #03989E;
+                    display: inline;
+                    font-size: 53px;
+                    margin-left: 0em;
+                    font-weight: bold;
+                }
+            }
+
+        }
+        .row{
+            .col1{
+                flex:6.7;
+                background-color: #99D4D7;
+                padding: 2em;
+                line-height: 2.5em;
+                h3{
+                    font-size: 35px;
+                }
+                p{
+                    font-size: 25px;
+                }
+                ul{
+                    font-size: 25px;
+                }
+
+                
+            }
+            .col2{
+                flex:3.3;
+                margin: 0px 20px;
+            }
+        }
+    }
+}
+
+
+
+// SANFORD HARMONY USA
+#main2{
+    height:auto;
+    margin-top:2em;
+    .container{
+        
+        h2{
+            @include h2; 
+        }
+        .row{
+            margin-top:1em;
+
+            .col{
+                img{
+                    width: 85%;
+                }
+            }
+            .col{
+                p{
+                    background-color: #99D4D7;
+                    height: 341px;
+                    font-size: 25px;
+                    line-height: 1.7em;
+                    padding: 0.7em;
+                }
+            }
+        }
+    }
+}
+
+
+
+// SANFORD HARMONY VIỆT NAM
+#main3{
+    height:auto;
+    margin-top:2em;
+    .container{
+        h2{
+            @include h2;
+        }
+        }
+        .col{
+            p{
+                background-color: #99D4D7;
+                height: 73%;
+                font-size: 25px;
+                line-height: 33px;
+                padding: 26px;
+            }
+            .img{
+                img{
+                    width: 97%;
+                    padding: 1em;
+                    object-fit: fill;
+                }
+            }
+        }
+    }
+    
+
+// <!--LỢI ÍCH CỦA CHƯƠNG TRÌNH-->
+#main4{
+    height:auto;
+    margin-top: 3em;
+    .container{
+        h2{
+            @include h2;
+        }
+        .content{
+            .content1{
+                margin-left: 22em;
+            }
+            .content2{
+                margin-left: 19em;
+
+            }
+        }
+    }
+}
+
+// HOẠT ĐỘNG CỦA SANFORD HARMONY VIỆT NAM
+#main5{
+    margin-top: 4em;
+    .container{
+        h2{
+            margin-left: 7.5em;
+            color: #FF914D;
+            border-top: 3.5px solid #99D4D7;
+            display: inline;
+        }
+    }
+}
+
+// <!-- ĐƯA SANFORD HARMONY VÀO TRƯỜNG CỦA BẠN -->
+#main6{
+    // margin-top: 4em;
+    .container{
+        margin-top: -5em;
+        h2{
+            margin-left: 7.5em;
+            color: #FF914D;
+            border-top: 3.5px solid #99D4D7;
+            display: inline;
+        }
+        .img{
+            object-fit: fill;
+            margin-top: 2em;
+            
+        }
+    }
+}
+
+// CHIA SẺ TỪ NGƯỜI THAM DỰ
+#main7{
+    .container{
+        height:auto;
+        h2{
+            @include h2;
+            
+        }
+        .row{
+            margin-top:20px;
+            .col{
+                background-color: #f9fafa;
+                margin-right: 27px;
+                height: 278px;
+                .img{
+                    img{
+                        width: 24%;
+                        margin-left: 107px;
+                        margin-top: 19px;
+
+                        border: 1px #d4d4d4 solid;
+                        padding: 0px;
+                        border-radius:50%;
+                        -moz-border-radius:50%;
+                        -webkit-border-radius:50%;
+                    }
+
+                }
+                .name{
+                    margin-left: 67px;            
+                }
+                p{
+                    margin-top: 1em;
+                }
+                 
+                
+            }    
+        }
+        
+    }
+}
+
+// ĐỒNG HÀNH CÙNG TRƯỜNG
+#main8{
+    .container{
+        height:auto;
+        margin-top: 6em;
+        h2{
+            @include h2;
+        }
+        .A1{
+            h3{
+                margin-left: 21.5em;
+            }
+            img{
+                width: 15%;
+                margin-left: 25em;
+                margin-top: -28px;
+            }
+        }
+        .A2{
+            h3{
+                margin-left: 11.5em; 
+            }
+            img{
+                width: 117%;
+                // margin-left: 21em;
+            }
+        }
+        .A3{
+            h3{
+                margin-left: 7em;
+            }
+            .a1{
+                margin-left: 3em;
+                margin-top: -2em;
+            }
+            .a2{
+                width: 15%;
+                margin-top: -13px;
+                margin-left: -4em;
+                position: absolute;
+            }
+        }
+    }
+}
+
+// PHẦN ĐĂNG KÍ
+#main9{
+    width: fit-content;
+    .Input1{
+        margin-left: 41px;
+    }
+    .Input2{
+        margin-left: 18px;
+    }
+    .Input4{
+        margin-left: 5px;
+    }
+    .Input6{
+        margin-left:29px;
+    }
+    #Part2{
+        margin-left: 500px;
+    }
+    #Part2 .TheFifthThing{
+        margin-left: -170px;
+        word-wrap: break-word;
+    }
+    .Verify-Signing-Button{
+        background-color: rgba(0, 113, 128, 0.63);
+        color: white;
+        font-weight: bold;
+        margin-left: 893px;
+    }
+}
+
+// FOOTER
+footer{
+    background-color: #57c6cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
