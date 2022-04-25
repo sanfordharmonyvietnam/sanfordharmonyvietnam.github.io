@@ -1,0 +1,131 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+
+}
+
+.container{
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    flex: 1;
+}
+.Input{
+    margin-left: 20px;
+    width: 400px;   
+}
+
+.col1{
+    img{
+        width:30px;
+    }
+}
+@mixin h2{
+    margin-left: 13.5em;
+    color: #FF914D;
+    // border-top: 3.9px solid #06999F;
+    display: inline;
+    font-family: 'Bungee', cursive;
+    
+}
+
+.divider {
+    width: 279px;
+    height: 2px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 340px;
+}    
+
+.divider1 {
+    width: 279px;
+    height: 2px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 610px;
+}  
+.divider2 {
+    width: 279px;
+    height: 2px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 375px;
+}  
+.divider3 {
+    width: 279px;
+    height: 3px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 333px;
+}  
+.divider4 {
+    width: 279px;
+    height: 3px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 324px;
+}  
+.divider5 {
+    width: 279px;
+    height: 3.1px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 359px;
+}  
+.divider6 {
+    width: 257px;
+    height: 3.1px;
+    background-color: #06999F;
+    display: inline-block;
+    margin-top: 9px;
+    position: absolute;
+    margin-left: 374px;
+}  
+
+.name1{
+    border-bottom: 2px dotted #99D4D7;
+    display: inline-block;
+    width: 118px;
+    height: 2px;
+    position: absolute;
+    margin-top: -18px;
+    margin-left: 32px;
+}
+.name2{
+    border-bottom: 2px dotted #99D4D7;
+    display: inline-block;
+    width: 118px;
+    height: 2px;
+    position: absolute;
+    margin-top: 19px;
+    margin-left: -128px;
+}
+
+
+
+
+
+
+
+
+
+
