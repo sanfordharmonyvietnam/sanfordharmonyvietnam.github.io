@@ -1,33 +1,45 @@
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .container {
-  max-width: 960px;
+  max-width: 1080px;
   width: 100%;
-  margin: auto; }
+  margin: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+  justify-content: center;
+}
 
 .col {
-  flex: 1; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1; 
+  flex-direction: column;
+}
 
 .Input {
   margin-left: 20px;
   width: 400px; }
 
-.col1 img {
-  width: 30px; }
-
 .divider {
   width: 279px;
   height: 2px;
   background-color: #06999F;
-  display: inline-block;
-  margin-top: 10px;
-  position: absolute;
-  margin-left: 340px; }
+  display: inline-flex;
+  align-self: center;
+  margin: 24px;
+}
 
 .divider1 {
   width: 279px;
@@ -104,39 +116,44 @@ body {
 #main1 {
   height: auto; }
   #main1 .container .h3 {
-    margin-top: 30px; }
+    display: flex;
+  }
     #main1 .container .h3 h3 {
       background-color: #99D4D7;
       display: inline;
+      text-align: center;
+      flex: 1;
+      font-weight: bold;
       font-size: 22px;
       padding: 19px; }
+      .row {
+        justify-content: center;
+      }
   #main1 .container .row .content {
-    margin-top: -1em;
-    margin-left: 7em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     text-shadow: 1px 2px 1px #8fbdd1;
     color: #03989E;
-    margin-bottom: 1em;
     font-family: 'Bungee', cursive;
     font-family: 'Open Sans', sans-serif; }
   #main1 .container .row .p1 {
-    font-size: 47px;
-    margin-left: 1.2em;
+    font-size: 42px;
     font-weight: bold;
-    margin-bottom: 30px; }
+    margin: 8px; }
   #main1 .container .row .p2 {
     color: #03989E;
     display: inline;
-    font-size: 53px;
-    margin-left: 0em;
+    font-size: 48px;
     font-weight: bold;
-    line-height: 22px; }
+    margin: 16px 8px; }
   #main1 .container .row .p3 {
-    font-size: 47px;
-    margin-left: 15px;
+    font-size: 42px;
     font-weight: bold;
-    line-height: 1px; }
+    margin: 24px 8px; }
   #main1 .row .col1 {
-    flex: 6.7;
+    flex: 2;
     background-color: #99D4D7;
     padding: 2em;
     line-height: 2.5em;
@@ -148,14 +165,15 @@ body {
   #main1 .row ul {
     font-size: 25px; }
   #main1 .col2 {
-    flex: 3.3;
-    margin: 0px 20px; }
+    flex: 1;
+    margin: 0px 20px; 
+  }
 
 #main2 {
   height: auto;
   margin-top: 2em; }
   #main2 .container h2 {
-    margin-left: 13.5em;
+    text-align: center;
     color: #FF914D;
     display: inline;
     font-family: 'Bungee', cursive; }
@@ -165,44 +183,48 @@ body {
       width: 85%; }
     #main2 .container .row .col p {
       background-color: #99D4D7;
-      height: 257px;
       font-size: 23px;
       line-height: 43px;
       text-align: justify;
-      padding: 0.8em; }
+      padding: 0.8em; 
+      padding-bottom: 24px;
+    }
 
 #main3 {
   height: auto; }
+  #main3 .xanh {
+    display: flex;
+    justify-content: center;
+  }
   #main3 .xanh img {
-    width: 6%;
-    position: absolute;
-    margin-left: 59.3em;
-    margin-top: -2em; }
+    width: 60px;
+    padding-left: 16px;
+  }
   #main3 .container h2 {
-    margin-left: 13.5em;
+    text-align: center;
     color: #FF914D;
     display: inline;
-    font-family: 'Bungee', cursive;
-    margin-left: 12em; }
+    font-family: 'Bungee', cursive;}
   #main3 .col p {
     background-color: #99D4D7;
-    height: 72%;
+    height: auto;
     font-size: 25px;
     line-height: 37px;
     padding: 26px;
     text-align: justify; }
-  #main3 .col .img img {
-    width: 98%;
-    padding: 22px;
-    object-fit: fill; }
+  .img img {
+    width: 100%;
+    object-fit: contain; 
+  }
 
 #main4 {
   height: auto;
   margin-top: -1em; }
   #main4 .container .LOI_ICH_CUA_CHUONG_TRINH {
-    margin-left: -40px; }
+    display: flex; }
     #main4 .container .LOI_ICH_CUA_CHUONG_TRINH h2 {
-      margin-left: 13.5em;
+      width: 100%;
+      text-align: center;
       color: #FF914D;
       display: inline;
       font-family: 'Bungee', cursive; }
@@ -215,86 +237,108 @@ body {
       margin-left: 19em; }
 
 #main5 .container h2 {
-  margin-left: 7.5em;
   color: #FF914D;
   display: inline;
-  font-family: 'Bungee', cursive; }
-#main5 .container .img img {
-  margin-top: -6em;
-  margin-bottom: 3em; }
+  text-align: center;
+  font-family: 'Bungee', cursive; 
+}
 
 #main6 .maybay img {
-  width: 5.2%;
-  margin-left: 22em;
-  margin-top: 0em;
-  position: absolute; }
-#main6 .container {
-  margin-top: -9em; }
-  #main6 .container h2 {
-    margin-left: 7.5em;
-    color: #FF914D;
-    display: inline;
-    font-family: 'Bungee', cursive; }
-  #main6 .container .row {
-    margin-top: -3.5em; }
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+#main6 .maybay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main6 .container h2 {
+  text-align: center;
+  color: #FF914D;
+  display: inline;
+  font-family: 'Bungee', cursive; 
+}
+
     #main6 .container .row .col .img img {
-      width: 100%; }
+      width: 100%; 
+      max-width: 256px;
+      margin: 0 16px;
+    }
     #main6 .container .row .col .content {
       background-color: #B5D7D9;
       font-size: 20px;
       line-height: 31px;
-      height: 410px;
-      margin: -60px 8px 89px -3px;
-      padding: 15px;
-      text-align: justify; }
+      min-height: 408px;
+      height: auto;
+      padding: 16px;
+      text-align: justify; 
+      margin: 0 16px;
+    }
       #main6 .container .row .col .content h3 {
-        margin-left: 57px; }
+        text-align: center; 
+      }
 
 #main7 .container {
   height: auto;
-  margin-top: -4.5em; }
+  }
   #main7 .container h2 {
-    margin-left: 13.5em;
+    text-align: center;
     color: #FF914D;
     display: inline;
     font-family: 'Bungee', cursive; }
-  #main7 .container .row {
-    margin-top: 11px; }
-    #main7 .container .row .col {
-      margin-right: 27px;
-      height: 313px; }
+    #main7 .container .row .img {
+      display: flex;
+      justify-content: center; 
+    }
+    #main7 .container .row .col .desc {
+      background-color: #B5D7D9;
+      min-height: 210px;
+      height: auto;
+      padding: 8px;
+      text-align: justify;
+      margin: 0 8px;
+    }
       #main7 .container .row .col .img img {
         width: 40%;
-        margin-left: 71px;
-        margin-top: 19px;
         border: 1px #d4d4d4 solid;
         padding: 0px;
         border-radius: 50%;
         -moz-border-radius: 50%;
         -webkit-border-radius: 50%; }
       #main7 .container .row .col .name {
-        margin-left: 18px; }
-      #main7 .container .row .col p {
-        margin-top: 1em; }
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #main7 .container .row .col .name p {
+        margin: 8px 0;
+      }
 
 #main8 .container {
-  height: auto;
-  margin-top: 6.5em; }
+  height: auto;}
   #main8 .container h2 {
-    margin-left: 13.5em;
+    text-align: center;
     color: #FF914D;
     display: inline;
     font-family: 'Bungee', cursive; }
+    #main8 .container .A1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   #main8 .container .A1 h3 {
-    margin-left: 15em;
     font-weight: bold;
     font-size: 25px; }
   #main8 .container .A1 img {
-    width: 15%;
-    margin-left: 25em;
-    margin-top: -28px; }
+    width: 200px;
+    object-fit: contain;
+  }
   #main8 .container .A2 h3 {
-    margin-left: 7em;
+    text-align: center;
     font-size: 25px; }
   #main8 .container .A2 img {
     width: 101%; }
@@ -334,44 +378,89 @@ body {
   font-weight: bold;
   margin-left: 893px; }
 
+  .form2 h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 16px;
+  }
+  .form2 {
+    margin: 16px;
+  }
+
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #57c6cc;
-  height: 200px; }
-  footer .footer {
-    margin-left: 36em;
-    padding: 1px; }
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  min-height: 200px; 
+  height: auto;
+  align-self: center;
+  width: 100%;
+}
+
     footer .footer h2 {
+      margin-top: 16px;
       font-size: 30px; }
   footer .info {
-    margin-left: -3em; }
-    footer .info .col1 {
-      margin-left: 5em; }
-      footer .info .col1 img {
-        width: 4%; }
-      footer .info .col1 p {
-        position: absolute;
-        margin-top: -45px;
-        margin-left: 73px;
-        font-size: 26px; }
-    footer .info .col2 {
-      margin-top: -66px;
-      margin-left: 43em; }
-      footer .info .col2 img {
-        width: 7%; }
-      footer .info .col2 p {
-        position: absolute;
-        margin-top: -49px;
-        margin-left: 74px;
-        font-size: 26px; }
-    footer .info .col3 {
-      margin-top: -67px;
-      margin-left: 63em; }
-      footer .info .col3 img {
-        width: 12%; }
-      footer .info .col3 p {
-        position: absolute;
-        margin-top: -53px;
-        margin-left: 76px;
-        font-size: 26px; }
+    display: flex;
+    flex-wrap: wrap;  
+  }
+    footer .info .col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      flex: 1;
+      height: 32px;
+      margin: 8px;
+    }
+      footer .info .col img {
+        width: 32px;
+        height: 32px;
+        margin-right: 8px; }
+      footer .info .col a {
+        display: inline-flex;
+        font-size: 25px;
+        align-items: center;
+        color: black;
+      }
 
+      @media only screen and (max-width: 768px) {
+        .container .row {
+          flex-direction: column;
+          align-items: center;
+        }
+        #main1 .col2 {
+          display: flex;
+          justify-content: center;
+        }
+        #main1 .container .row .content p {
+          font-size: 32px;
+          word-break: break-word;
+          text-align: center;
+        }
+
+        #main8 .container .row  {
+          display: flex;
+          flex-direction: column;
+        }
+
+        #main6 .container .row .col .content {
+          min-height: auto;
+          height: auto;
+        }
+
+        #main7 .container .row .col .desc {
+          min-height: auto;
+          height: auto;
+          margin-bottom: 16px;
+        }
+
+        footer .info {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
 /*# sourceMappingURL=style.css.map */
