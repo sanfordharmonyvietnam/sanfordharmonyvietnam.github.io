@@ -129,6 +129,7 @@ body {
       .row {
         justify-content: center;
       }
+
   #main1 .container .row .content {
     display: flex;
     flex-direction: column;
@@ -147,11 +148,11 @@ body {
     display: inline;
     font-size: 48px;
     font-weight: bold;
-    margin: 16px 8px; }
+    margin: 8px; }
   #main1 .container .row .p3 {
     font-size: 42px;
     font-weight: bold;
-    margin: 24px 8px; }
+    margin: 8px; }
   #main1 .row .col1 {
     flex: 2;
     background-color: #99D4D7;
@@ -159,6 +160,7 @@ body {
     line-height: 2.5em;
     text-align: justify; }
   #main1 .row h3 {
+    font-weight: bold;
     font-size: 35px; }
   #main1 .row p {
     font-size: 25px; }
@@ -199,6 +201,7 @@ body {
   #main3 .xanh img {
     width: 60px;
     padding-left: 16px;
+    object-fit: contain;
   }
   #main3 .container h2 {
     text-align: center;
@@ -229,12 +232,12 @@ body {
       display: inline;
       font-family: 'Bungee', cursive; }
   #main4 .container .content {
-    margin-left: -146px;
+  
     font-size: 18px; }
-    #main4 .container .content .content1 {
-      margin-left: 22em; }
-    #main4 .container .content .content2 {
-      margin-left: 19em; }
+  #main4 .container .content p{
+  
+    text-align: center;}
+ 
 
 #main5 .container h2 {
   color: #FF914D;
@@ -243,6 +246,7 @@ body {
   font-family: 'Bungee', cursive; 
 }
 
+
 #main6 .maybay img {
   width: 48px;
   height: 48px;
@@ -250,10 +254,13 @@ body {
 }
 #main6 .maybay {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
+#main6 .container .row,#main8 .container .row{
+  
+  align-items: flex-start;
+}
 #main6 .container h2 {
   text-align: center;
   color: #FF914D;
@@ -270,7 +277,7 @@ body {
       background-color: #B5D7D9;
       font-size: 20px;
       line-height: 31px;
-      min-height: 408px;
+      min-height: 432px;
       height: auto;
       padding: 16px;
       text-align: justify; 
@@ -294,11 +301,10 @@ body {
     }
     #main7 .container .row .col .desc {
       background-color: #B5D7D9;
-      min-height: 210px;
+      min-height: 256px;
       height: auto;
       padding: 8px;
       text-align: justify;
-      margin: 0 8px;
     }
       #main7 .container .row .col .img img {
         width: 40%;
@@ -408,6 +414,8 @@ footer {
       font-size: 30px; }
   footer .info {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;  
   }
     footer .info .col {
@@ -445,6 +453,18 @@ footer {
           text-align: center;
         }
 
+        #main1 .container .row .col1 {
+          flex: 1;
+        }
+        #main1 .container .row .col2 {
+          flex: 1;
+          margin: 0;
+          padding: 0;
+        }
+        #main1 .container .row .col2 img {
+          object-fit: cover;
+          width: 100%;
+        }
         #main8 .container .row  {
           display: flex;
           flex-direction: column;
