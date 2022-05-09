@@ -246,6 +246,9 @@ body {
   font-family: 'Bungee', cursive; 
 }
 
+.container h2 {
+  margin-bottom: 16px;
+}
 
 #main6 .maybay img {
   width: 48px;
@@ -285,6 +288,7 @@ body {
     }
       #main6 .container .row .col .content h3 {
         text-align: center; 
+        font-weight: bold;
       }
 
 #main7 .container {
@@ -343,13 +347,11 @@ body {
     width: 200px;
     object-fit: contain;
   }
-  #main8 .container .A2 h3 {
-    text-align: center;
-    font-size: 24px; }
   #main8 .container .A2 img {
     width: 100%; }
   #main8 .container h3 {
     text-align: center;
+    font-weight: bold;
     font-size: 24px; }
     #main8 .container .A3 {
       display: flex;
@@ -357,49 +359,23 @@ body {
   #main8 .container .A3 img {
     object-fit: contain;
   }
-  /* #main8 .container .A3 .a2 {
-    width: 15%;
-    margin-top: -13px;
-    margin-left: -2em;
-    position: absolute; }
-  #main8 .container .A3 .a3 {
-    width: 10%;
-    margin-top: 1em;
-    position: absolute;
-    margin-left: 11em; } */
-
-#main9 .Input1 {
-  margin-left: 41px; }
-#main9 .Input2 {
-  margin-left: 18px; }
-#main9 .Input4 {
-  margin-left: 5px; }
-#main9 .Input6 {
-  margin-left: 29px; }
-#main9 #Part2 {
-  margin-left: 500px; }
-#main9 #Part2 .TheFifthThing {
-  margin-left: -170px;
-  word-wrap: break-word; }
-#main9 .Verify-Signing-Button {
-  background-color: rgba(0, 113, 128, 0.63);
-  color: white;
-  font-weight: bold;
-  margin-left: 893px; }
-
+  #main9 {
+    margin-bottom: 32px;
+  }
   .form2 h3 {
     text-align: center;
     font-weight: bold;
-    margin: 16px;
+    margin: 15px;
   }
-  .form2 {
-    margin: 16px;
+
+  #main9 .form-group {
+    margin: 0 32px;
   }
 
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #57c6cc;
+  background-color: rgba(3, 155, 160, 0.50);
   align-items: center;
   justify-content: center;
   max-width: 1080px;
@@ -442,6 +418,11 @@ footer {
         .container .row {
           flex-direction: column;
           align-items: center;
+        }
+
+        #main9 .container .row {
+          flex-direction: row;
+          align-items: flex-start;
         }
         #main1 .col2 {
           display: flex;
